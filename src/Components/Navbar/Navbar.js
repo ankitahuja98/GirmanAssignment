@@ -12,7 +12,7 @@ import useWindowDimensions from "../../utils/useWindowDimensions";
 const Navbar = () => {
   const [menu, SetMenu] = useState("none");
   const [NavIcon, setNavIcon] = useState(Menu);
-  const { height, width } = useWindowDimensions();
+  const { width } = useWindowDimensions();
 
   const MenuBtn = () => {
     if (menu !== "none") {
