@@ -1,0 +1,76 @@
+.userDiv {
+  /* position: absolute; */
+  width: 1074px;
+  height: 1177px;
+  top: 160px;
+  /* left: 423px; */
+  gap: 27px;
+}
+.SearchMainDiv {
+  height: 100vh;
+}
+
+.SearchDiv {
+  height: 100%;
+  background-color: #e8f4ffd1;
+  padding: 50px 0px;
+}
+
+.UserNotFound {
+  width: 472px;
+  height: 451px;
+}
+.SearchBar {
+  display: none;
+}
+
+.SearchBar2 {
+  width: 295px;
+  border-radius: 10px;
+  border: 0.74px solid black;
+  height: 38px;
+  border-radius: 8px;
+  padding-left: 9%;
+  gap: 12px;
+  margin-bottom: 2.3rem;
+  position: relative;
+  right: 10px;
+}
+.SearchBar {
+  display: none;
+}
+.SearchIcon {
+  position: relative;
+  bottom: 1px;
+  left: 18px;
+  z-index: 1;
+}
+@media (max-width: 700px) {
+  .SearchBar {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  .UserNotFound {
+    width: 291px;
+    height: 278px;
+  }
+  .SearchMainDiv {
+    height: 100%;
+  }
+}
+
+@media (max-width: 350px) {
+  .SearchBar2 {
+    width: 250px;
+    padding-left: 11%;
+    position: relative;
+    right: 12px;
+  }
+  .SearchIcon {
+    position: relative;
+    bottom: 1px;
+    left: 15px;
+  }
+}

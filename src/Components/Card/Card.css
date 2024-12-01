@@ -1,0 +1,138 @@
+.UserCard {
+  width: 340px;
+  height: 274px;
+  gap: 10px;
+  padding: 24px;
+  border-radius: 16px;
+  background-color: white;
+  box-shadow: 0px 0px 4px rgb(54, 54, 54);
+}
+
+.UserCard:hover {
+  width: 340px;
+  height: 274px;
+  gap: 10px;
+  padding: 24px;
+  border-radius: 16px;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 0px 0px 5px rgb(24, 24, 24);
+}
+
+.userImage {
+  width: 78px;
+  height: 78px;
+  margin-bottom: 10px;
+}
+.userName {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38.73px;
+  font-family: "Inter", sans-serif;
+}
+.userLocaion {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12.1px;
+  font-family: "Inter", sans-serif;
+  color: #425763;
+}
+
+.LocationIcon {
+  width: 10px !important;
+  font-weight: 500;
+  height: 13px !important;
+  color: #425763;
+}
+
+.contactIcon {
+  width: 13px !important;
+  height: 13px !important;
+  margin-bottom: 0px;
+}
+
+.ContactNum {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14.52px;
+  font-family: "Inter", sans-serif;
+  color: black;
+  margin-bottom: 0px;
+}
+
+.AvPhone {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12.1px;
+  font-family: "Inter", sans-serif;
+  color: #afafaf;
+}
+.fetchDataBtn {
+  height: 20px;
+  width: 120px;
+  min-height: 40px;
+  max-height: 40px;
+  border-radius: 8px;
+  padding: 2px 4px;
+  background: var(--Zinc-900, #18181b);
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.94px;
+  color: var(--Zinc-50, #fafafa);
+  box-shadow: 0px 2px 5px rgb(75, 75, 75);
+}
+
+@media (max-width: 400px) {
+  .UserCard {
+    width: 294px;
+    height: 236px;
+    gap: 8.6px;
+    padding: 20px;
+    border-radius: 13px;
+  }
+  .userImage {
+    width: 67px;
+    height: 67px;
+  }
+  .userName {
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 33px;
+    font-family: "Inter", sans-serif;
+  }
+  .userLocaion {
+    font-size: 8.6px;
+    font-weight: 500;
+    line-height: 10.46px;
+  }
+  .LocationIcon {
+    width: 8.65px !important;
+    height: 11.24px !important;
+  }
+  .contactIcon {
+    width: 11.24px !important;
+    height: 11.24px !important;
+  }
+  .ContactNum {
+    font-size: 10.38px;
+    font-weight: 600;
+    line-height: 12.56px;
+  }
+  .AvPhone {
+    font-size: 8.65px;
+    font-weight: 500;
+    line-height: 10.46px;
+  }
+  .fetchDataBtn {
+    height: 34.6px;
+    width: 103.67px;
+    min-height: 34.59px;
+    max-height: 34.59px;
+    border-radius: 7px;
+    padding: 2px 4px;
+    font-size: 12.11px;
+    font-weight: 500;
+    line-height: 14.65px;
+  }
+}

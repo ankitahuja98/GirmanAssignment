@@ -1,0 +1,98 @@
+.modalBackground {
+  width: 100%;
+  height: 88vh;
+  background-color: rgba(206, 206, 206, 0.502);
+  position: fixed;
+  top: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.modalContainer {
+  width: 512px;
+  height: 475px;
+  background-color: white;
+  box-shadow: 0px 2px 6px black;
+  display: flex;
+  flex-direction: column;
+  border-radius: 7.41px;
+}
+.MainTitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  font-family: "Inter", serif;
+}
+.SecondaryTitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.9px;
+  font-family: "Inter", serif;
+  color: var(--Zinc-500, #71717a);
+  gap: 10px;
+}
+
+.UserData > p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16.8px;
+  font-family: "Inter", serif;
+  color: var(--Zinc-950, #09090b);
+}
+.UserProfileImage {
+  width: 207px;
+  height: 207px;
+  border-radius: 10px;
+}
+.footer {
+  width: 464px;
+  height: 40px;
+}
+.DailogX {
+  display: none;
+  width: 24px;
+  height: 24px;
+}
+.cancelBtn {
+  box-shadow: 0px 0px 4px rgb(190, 190, 190);
+  position: relative;
+  left: 85%;
+  width: 70px;
+  height: 40px;
+  min-height: 40px;
+  max-height: 40px;
+  border: 1px solid var(--Zinc-200, #e4e4e7);
+  padding: 2px 4px;
+  gap: 10px;
+}
+
+@media (max-width: 700px) {
+  .modalContainer {
+    width: 299px;
+    height: 447px;
+    padding: 22px;
+  }
+  .MainTitle {
+    font-size: 22px;
+    line-height: 26.89px;
+  }
+  .SecondaryTitle {
+    font-size: 12.9px;
+    line-height: 15.68px;
+  }
+  .UserData > p {
+    font-size: 12.96px;
+    line-height: 15.5px;
+  }
+  .UserProfileImage {
+    width: 191.6px;
+    height: 191.62px;
+  }
+  .DailogX {
+    display: block;
+  }
+  .cancelBtn {
+    display: none;
+  }
+}

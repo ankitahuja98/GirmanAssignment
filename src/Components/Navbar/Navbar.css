@@ -1,0 +1,130 @@
+:root {
+  --TextPrimary: #black;
+  --Bgprimary: #white;
+  --activeText: #3261db;
+}
+
+.Nav {
+  background-color: var(--TextPrimary);
+  color: var(--Bgprimary);
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4.5rem;
+  position: sticky;
+  top: 0;
+}
+
+.NavContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  max-width: 1200px;
+  padding: 0 24px;
+}
+.NavLogo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 221px;
+  height: 62px;
+}
+.NavLogo img {
+  cursor: pointer;
+  min-width: 90%;
+}
+.NavItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5rem;
+}
+
+.NavLink {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  margin: 0px 1rem;
+  font-weight: 500;
+}
+
+.NavLink:hover {
+  color: var(--activeText);
+  text-decoration: underline;
+}
+.active {
+  text-decoration: underline;
+  color: var(--activeText) !important;
+}
+
+.Navbar {
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+.NavSearchBar {
+  width: 20rem;
+  border-radius: 10px;
+  border: 2px solid black;
+  height: 2rem;
+  border-radius: 10px;
+  position: relative;
+  right: 50px;
+  padding-left: 9%;
+}
+.Menu {
+  display: none;
+  width: 24px;
+  height: 24px;
+}
+
+@media (min-width: 700px) {
+  .NavItems {
+    display: flex !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .NavItems {
+    display: block;
+    position: absolute;
+    width: 96px;
+    height: 166px;
+    top: 55px;
+    right: 25px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px gray;
+    background-color: white;
+    padding: 17px 12px;
+    gap: 10px;
+  }
+  .Menu {
+    display: block;
+  }
+  .Menu img {
+    cursor: pointer;
+    display: block;
+    width: 2.1rem;
+  }
+  .NavBtn {
+    margin: 0px;
+    margin-top: 1rem;
+  }
+  .NavLink {
+    margin: 0px;
+  }
+  .NavbarSearchBar {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .NavLogo {
+    width: 102px;
+    height: 28.84px;
+  }
+}
