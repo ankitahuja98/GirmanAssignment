@@ -14,6 +14,7 @@ const Search = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [modelDataset, setModelDataset] = useState();
   const [SearchInput, SetSearchInput] = useState("");
+  console.log(userDataApi);
 
   const searchIpt = useSelector((store) => {
     return store.cart.searchInput;
